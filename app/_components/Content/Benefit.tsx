@@ -52,17 +52,21 @@ export default function Benefit() {
       ref={heroRef}
       className="h-screen flex justify-center items-center"
     >
-      <h1 className="leftText font-semibold text-[77.22px] absolute top-70 left-60">
+      <h1 className="leftText font-semibold text-[36px] md:text-[77.22px] absolute top-70 left-60">
         Audio
       </h1>
-      <h1 className="leftText font-semibold text-[77.22px] absolute left-20">
+      <h1 className="leftText font-semibold text-[36px] md:text-[77.22px] absolute left-20">
         Performa
       </h1>
-      <img src="/speaker.svg" className="speaker" alt="Speaker" />
-      <h1 className="rightText font-semibold text-[77.22px] absolute right-40">
+      <img
+        src="/speaker.svg"
+        className="speaker w-[150px] h-[210px] md:w-[314px] md:h-421px"
+        alt="Speaker"
+      />
+      <h1 className="rightText font-semibold text-[36px] md:text-[77.22px] absolute right-40">
         Presisi
       </h1>
-      <h1 className="rightText font-semibold text-[77.22px] absolute bottom-60 right-70">
+      <h1 className="rightText font-semibold text-[36px] md:text-[77.22px] absolute bottom-60 right-70">
         Tinggi
       </h1>
     </section>

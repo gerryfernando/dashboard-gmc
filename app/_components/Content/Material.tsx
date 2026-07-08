@@ -98,11 +98,11 @@ export default function Material() {
               Keunggulan GMC
             </span>
 
-            <h2 className="mt-10 text-2xl font-medium leading-tight">
+            <h2 className="mt-10 text-[12px] md:text-2xl font-medium leading-tight">
               Dirancang dengan teknologi akustik dan material berkualitas
             </h2>
 
-            <p className="mt-2 text-2xl leading-tight text-gray-500">
+            <p className="mt-2 text-[12px] md:text-2xl leading-tight text-gray-500">
               Untuk menghasilkan suara presisi, jernih, dan seimbang di setiap
               frekuensi.
             </p>
@@ -154,16 +154,18 @@ export default function Material() {
                 ease: "easeOut",
               }}
             >
-              <h2 className="text-5xl font-bold">{texts[index].title}</h2>
+              <h2 className="text-2xl md:text-5xl font-bold">
+                {texts[index].title}
+              </h2>
 
-              <p className="mt-4 max-w-md leading-relaxed text-gray-400">
+              <p className="mt-4 text-[14px] md:text max-w-md leading-relaxed text-gray-400">
                 {texts[index].description}
               </p>
             </motion.div>
           </div>
 
-          <div className="flex gap-5 overflow-hidden justify-end">
-            <div className="relative h-[520px] w-[700px] overflow-hidden">
+          <div className="flex gap-5 overflow-hidden items-center justify-end">
+            <div className="relative h-60 md:h-[420px] w-[700px] overflow-hidden">
               <motion.div
                 key={prevIndex}
                 animate={{
@@ -175,7 +177,7 @@ export default function Material() {
                   duration: 1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute left-0 top-0 h-[420px] w-[420px]"
+                className="absolute left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
               >
                 <Image
                   src={images[prevIndex]}
@@ -200,7 +202,7 @@ export default function Material() {
                   },
                 }}
                 transition={{ duration: 1 }}
-                className="absolute left-0 top-0 h-[420px] w-[420px]"
+                className="absolute left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
               >
                 <Image
                   src={images[index]}
@@ -226,7 +228,7 @@ export default function Material() {
                   duration: 1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute left-0 top-0 h-[420px] w-[420px]"
+                className="absolute left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
               >
                 <Image
                   src={images[nextIndex]}

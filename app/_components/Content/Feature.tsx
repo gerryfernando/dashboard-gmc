@@ -35,7 +35,7 @@ export default function Feature() {
           <div
             key={item.title}
             className="
-              relative flex h-45 w-175 overflow-hidden rounded-3xl bg-[#2A2A2A] p-6 cursor-pointer transition-all duration-300 hover:bg-[#747474] hover:shadow-2xl"
+              relative flex h-auto w-auto md:w-175 md:h-45 overflow-hidden rounded-3xl bg-[#2A2A2A] p-6 cursor-pointer transition-all duration-300 hover:bg-[#747474] hover:shadow-2xl"
           >
             <div className="z-10 max-w-[70%]">
               <h3 className="text-xl font-semibold text-white">{item.title}</h3>

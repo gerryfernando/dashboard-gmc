@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="mx-auto px-8 py-20">
         <div className="flex justify-between">
           <div>
-            <h2 className=" text-[44px] font-semibold leading-tight uppercase">
+            <h2 className=" text-[36px] text-center sm=text-left sm=text-[44px] font-semibold leading-tight uppercase">
               Teknologi <span className="text-[#6D6D6D]">Lokal</span>,
               <br />
               Standar Global
             </h2>
 
-            <div className="mt-14 flex items-center gap-12">
+            <div className="mt-14 flex items-center flex-col sm:flex-row justify-between gap-12">
               <Image src="/logo.png" alt="GMC" width={126} height={36} />
 
               <div className="flex items-center gap-5 text-gray-400">
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex gap-28">
+          <div className="hidden gap-28 md:flex">
             <div>
               <h4 className="mb-5 text-lg font-semibold">Kategori</h4>
 
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="flex items-center justify-between text-sm text-gray-500">
           <p>© 2026. GMC Elektronik. All Rights Reserved</p>
 
-          <div className="flex gap-8">
+          <div className="hidden md:flex gap-8">
             <Link href="#">Privacy & Cookies Policy</Link>
             <Link href="#">Terms of Service</Link>
           </div>

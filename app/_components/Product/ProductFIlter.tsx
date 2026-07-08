@@ -5,10 +5,11 @@ const categories = ["Semua Produk", "Speaker", "Kipas", "Kompor", "Grill"];
 export default function ProductFilter() {
   return (
     <>
-      <h1 className="text-5xl font-bold">Produk</h1>
+      <h1 className="text-3xl font-bold md:text-5xl">Produk</h1>
 
-      <div className="mt-8 flex flex-wrap items-center justify-between gap-6">
-        <div className="flex gap-2">
+      <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        {/* Categories */}
+        <div className="flex flex-wrap gap-2">
           {categories.map((item, i) => (
             <button
               key={item}
@@ -23,21 +24,25 @@ export default function ProductFilter() {
           ))}
         </div>
 
-        <div className="flex gap-3">
-          <div className="flex items-center rounded-full border border-white/20 px-4">
+        {/* Search & Actions */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:flex-nowrap">
+          {/* Search */}
+          <div className="flex w-full items-center rounded-full border border-white/20 px-4 sm:w-64">
             <input
               placeholder="Cari produk"
-              className="bg-transparent py-2 outline-none"
+              className="w-full bg-transparent py-2 outline-none"
             />
             <Search size={16} />
           </div>
 
-          <button className="flex items-center gap-2 rounded-full border border-white/20 px-5">
+          {/* Sort */}
+          <button className="flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-2">
             Urutkan
             <ChevronDown size={16} />
           </button>
 
-          <button className="flex items-center gap-2 rounded-full border border-white/20 px-5">
+          {/* Filter */}
+          <button className="flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-2">
             Filter
             <ChevronDown size={16} />
           </button>

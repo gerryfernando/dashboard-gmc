@@ -10,21 +10,20 @@ export default function Home() {
   return (
     <div>
       <section
-        className="bg-cover bg-center bg-no-repeat px-20"
+        className="bg-cover bg-center bg-no-repeat px-5 lg:px-20"
         style={{
           backgroundImage: "url('/bg.png')",
         }}
       >
         <Header />
-
         <Benefit />
         <Quote />
       </section>
-      <section className="py-10 px-20">
+      <section className="py-10 px-5 lg:px-20">
         <Material />
         <Feature />
       </section>
-      <section className="py-10 px-20">
+      <section className="py-10 px-5 lg:px-20">
         <Product />
       </section>
       <Footer />

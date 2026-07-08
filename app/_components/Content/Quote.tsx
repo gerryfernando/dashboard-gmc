@@ -102,7 +102,7 @@ export default function Quote() {
         ".title",
         {
           y: -200,
-          opacity: 1,
+          opacity: 0,
           ease: "power2.out",
         },
         "<",

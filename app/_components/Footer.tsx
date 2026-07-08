@@ -1,15 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Music2, ShoppingBag, Store } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
-      <div className="mx-auto max-w-7xl px-8 py-20">
+    <footer className="bg-black text-white px-20">
+      <div className="mx-auto px-8 py-20">
         <div className="flex justify-between">
-          {/* Left */}
           <div>
-            <h2 className="max-w-xl text-[44px] font-semibold leading-tight uppercase">
+            <h2 className=" text-[44px] font-semibold leading-tight uppercase">
               Teknologi <span className="text-[#6D6D6D]">Lokal</span>,
               <br />
               Standar Global
@@ -19,15 +17,30 @@ export default function Footer() {
               <Image src="/logo.png" alt="GMC" width={126} height={36} />
 
               <div className="flex items-center gap-5 text-gray-400">
-                {/* <Instagram size={20} /> */}
-                <Music2 size={20} />
-                <ShoppingBag size={20} />
-                <Store size={20} />
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  height={20}
+                  width={20}
+                />
+                <Image
+                  src="/tiktok.svg"
+                  alt="Tiktok"
+                  height={20}
+                  width={20}
+                  className="hover:border-white"
+                />
+                <Image src="/shopee.svg" alt="Shopee" height={20} width={20} />
+                <Image
+                  src="/tokopedia.svg"
+                  alt="Tokopedia"
+                  height={20}
+                  width={20}
+                />
               </div>
             </div>
           </div>
 
-          {/* Right */}
           <div className="flex gap-28">
             <div>
               <h4 className="mb-5 text-lg font-semibold">Kategori</h4>
@@ -69,10 +82,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="my-10 h-px bg-white/20" />
 
-        {/* Bottom */}
         <div className="flex items-center justify-between text-sm text-gray-500">
           <p>© 2026. GMC Elektronik. All Rights Reserved</p>
 

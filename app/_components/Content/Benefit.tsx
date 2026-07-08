@@ -7,7 +7,7 @@ import { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Product() {
+export default function Benefit() {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {

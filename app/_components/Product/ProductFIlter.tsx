@@ -8,7 +8,6 @@ export default function ProductFilter() {
       <h1 className="text-3xl font-bold md:text-5xl">Produk</h1>
 
       <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-        {/* Categories */}
         <div className="flex flex-wrap gap-2">
           {categories.map((item, i) => (
             <button
@@ -24,9 +23,7 @@ export default function ProductFilter() {
           ))}
         </div>
 
-        {/* Search & Actions */}
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:flex-nowrap">
-          {/* Search */}
           <div className="flex w-full items-center rounded-full border border-white/20 px-4 sm:w-64">
             <input
               placeholder="Cari produk"
@@ -35,13 +32,11 @@ export default function ProductFilter() {
             <Search size={16} />
           </div>
 
-          {/* Sort */}
           <button className="flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-2">
             Urutkan
             <ChevronDown size={16} />
           </button>
 
-          {/* Filter */}
           <button className="flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-2">
             Filter
             <ChevronDown size={16} />

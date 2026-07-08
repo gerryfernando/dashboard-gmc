@@ -52,21 +52,21 @@ export default function Benefit() {
       ref={heroRef}
       className="h-screen flex justify-center items-center"
     >
-      <h1 className="leftText font-semibold text-[36px] md:text-[77.22px] absolute top-70 left-60">
+      <h1 className="leftText font-semibold text-[24px] md:text-[48px] lg:text-[50px] xl:text-[77.22px] absolute top-90 left-20 md:top-50 md:left-20 lg:top-50 lg:left-40 xl:top-60 xl:left-50">
         Audio
       </h1>
-      <h1 className="leftText font-semibold text-[36px] md:text-[77.22px] absolute left-20">
+      <h1 className="leftText font-semibold text-[24px] md:text-[48px] lg:text-[50px] xl:text-[77.22px] absolute left-0 md:left-3 lg:left-10 xl:left-10">
         Performa
       </h1>
       <img
         src="/speaker.svg"
-        className="speaker w-[150px] h-[210px] md:w-[314px] md:h-421px"
+        className="speaker w-[150px] h-[210px] md:w-[250px] md:h-[390px] xl:w-[396px] xl:h-[531px]"
         alt="Speaker"
       />
-      <h1 className="rightText font-semibold text-[36px] md:text-[77.22px] absolute right-40">
+      <h1 className="rightText font-semibold text-[24px] md:text-[48px] lg:text-[50px] xl:text-[77.22px] absolute right-10 md:right-20 lg:right-30 xl:right-30">
         Presisi
       </h1>
-      <h1 className="rightText font-semibold text-[36px] md:text-[77.22px] absolute bottom-60 right-70">
+      <h1 className="rightText font-semibold text-[24px] md:text-[48px] lg:text-[50px] xl:text-[77.22px] absolute bottom-90 right-15 md:bottom-50 md:right-25 lg:bottom-50 lg:right-40 xl:bottom-50 xl:right-50">
         Tinggi
       </h1>
     </section>

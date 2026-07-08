@@ -139,7 +139,7 @@ export default function Material() {
           </div>
         </div>
 
-        <div className="mt-28 flex flex-col lg:flex-row justify-between items-center gap-16 items-center">
+        <div className="mt-14 md:mt-28 flex flex-col lg:flex-row justify-between items-center gap-16 items-center">
           <div>
             <motion.div
               key={prevIndex}

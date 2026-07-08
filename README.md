@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🚀 Tech Stack
+
+- **Next.js** – Framework React untuk membangun aplikasi web yang cepat dan optimal.
+- **TypeScript** – Menambahkan type safety sehingga kode lebih mudah dikelola dan mengurangi potensi bug.
+- **Tailwind CSS** – Digunakan untuk styling karena bersifat utility-first, sehingga penulisan CSS menjadi lebih cepat, ringkas, dan mudah dipelihara.
+- **GSAP (GreenSock Animation Platform)** – Digunakan untuk membuat animasi berbasis scroll, seperti efek pinning, horizontal scrolling, dan transisi antar section.
+- **Framer Motion** – Digunakan untuk animasi interaktif, seperti perpindahan carousel, fade in/out, dan transisi antar elemen agar terasa lebih halus.
+
+## 📦 Alasan Penggunaan
+
+- **Tailwind CSS** membantu mempercepat proses styling tanpa perlu membuat banyak file CSS terpisah.
+- **GSAP** dipilih karena sangat baik untuk animasi yang dipicu oleh scrolling dan mudah digunakan.
+- **Framer Motion** digunakan untuk animasi komponen React, terutama pada carousel dan transisi UI, karena caranya sederhana dan mudah diintegrasikan.
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+#Build
+npm run build
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployed Website
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://dashboard-gmc-project.netlify.app/

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
 import { useLayoutEffect, useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function Material() {
   const section = useRef<HTMLDivElement>(null);
@@ -60,6 +61,7 @@ export default function Material() {
 
   const prevIndex = (index - 1 + length) % length;
   const nextIndex = (index + 1 + length) % length;
+  const isMobile = useMediaQuery({ maxWidth: 640 });
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -91,8 +93,8 @@ export default function Material() {
   }, []);
   return (
     <section className="text-white">
-      <div className="px-8 py-24 pb-0">
-        <div className="flex items-end w-full justify-between">
+      <div className="px-4 md:px-8 py-24 pb-0">
+        <div className="flex flex-col gap-4 sm:flex-row items-end w-full justify-between">
           <div className="max-w-4xl">
             <span className="rounded-xl bg-white px-5 py-3 font-semibold text-black">
               Keunggulan GMC
@@ -137,7 +139,7 @@ export default function Material() {
           </div>
         </div>
 
-        <div className="mt-28 grid grid-cols-2 gap-16 items-center">
+        <div className="mt-28 flex flex-col lg:flex-row justify-between items-center gap-16 items-center">
           <div>
             <motion.div
               key={prevIndex}
@@ -165,7 +167,7 @@ export default function Material() {
           </div>
 
           <div className="flex gap-5 overflow-hidden items-center justify-end">
-            <div className="relative h-60 md:h-[420px] w-[700px] overflow-hidden">
+            <div className="relative h-60 w-70 sm:w-120 md:h-[420px] md:w-[700px] overflow-hidden">
               <motion.div
                 key={prevIndex}
                 animate={{
@@ -177,7 +179,7 @@ export default function Material() {
                   duration: 1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
+                className="absolute hidden sm:block left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
               >
                 <Image
                   src={images[prevIndex]}
@@ -190,7 +192,7 @@ export default function Material() {
               <motion.div
                 key={index}
                 animate={{
-                  x: 120,
+                  x: isMobile ? 0 : 120,
                   scale: 1,
                   opacity: 1,
                   zIndex: 2,
@@ -228,7 +230,7 @@ export default function Material() {
                   duration: 1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
+                className="absolute hidden sm:block left-0 top-0 h-60 w-60 md:h-[420px] md:w-[420px]"
               >
                 <Image
                   src={images[nextIndex]}

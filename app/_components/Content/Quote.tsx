@@ -117,25 +117,27 @@ export default function Quote() {
       ref={section}
       className="relative flex h-screen items-center justify-center overflow-hidden"
     >
-      <span className="chip-left font-normal text-[18px] absolute left-10 rounded-full bg-white/10 px-5 py-2">
+      <span className="chip-left font-normal text-[12px] md:text-[18px] absolute left-10 rounded-full bg-white/10 px-5 py-2">
         Compact Speaker
       </span>
 
-      <span className="chip-left-1 text-[18px] absolute left-105 rounded-full bg-white/10 px-5 py-2">
+      <span className="chip-left-1 text-[12px] md:text-[18px] absolute left-105 rounded-full bg-white/10 px-5 py-2">
         Multimedia Speaker
       </span>
 
       <div className="title text-center">
-        <h2 className="text-[77.22px] font-bold">Jernih Kuat</h2>
+        <h2 className="text-[36px] md:text-[77.22px] font-bold">Jernih Kuat</h2>
 
-        <h2 className="text-[77.22px] font-bold">di Setiap Momen</h2>
+        <h2 className="text-[36px] md:text-[77.22px] font-bold">
+          di Setiap Momen
+        </h2>
       </div>
 
-      <span className="chip-right text-[18px] absolute right-105 rounded-full bg-white/10 px-5 py-2">
+      <span className="chip-right text-[12px] md:text-[18px] absolute right-105 rounded-full bg-white/10 px-5 py-2">
         Professional Line
       </span>
 
-      <span className="chip-right-1 text-[18px] absolute right-10 rounded-full bg-white/10 px-5 py-2">
+      <span className="chip-right-1 text-[12px] md:text-[18px] absolute right-10 rounded-full bg-white/10 px-5 py-2">
         Powered Speaker
       </span>
     </section>

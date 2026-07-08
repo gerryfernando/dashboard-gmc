@@ -43,8 +43,8 @@ export default function Header() {
             </Link>
           ))}
 
-          <button className="rounded-full border border-white p-2 text-white transition hover:bg-white hover:text-black">
-            {/* <Search size={18} /> */}
+          <button className="rounded-full border border-white p-2">
+            <Image src="/search.svg" alt="search icon" width={16} height={16} />
           </button>
         </div>
       </div>

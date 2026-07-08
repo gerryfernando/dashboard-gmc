@@ -16,7 +16,7 @@ export default function Footer() {
             </h2>
 
             <div className="mt-14 flex items-center gap-12">
-              <Image src="/logo.png" alt="GMC" width={100} height={32} />
+              <Image src="/logo.png" alt="GMC" width={126} height={36} />
 
               <div className="flex items-center gap-5 text-gray-400">
                 {/* <Instagram size={20} /> */}

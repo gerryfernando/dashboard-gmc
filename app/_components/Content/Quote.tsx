@@ -20,8 +20,6 @@ export default function Quote() {
           pin: true,
         },
       });
-
-      // Title comes from below
       tl.from(".title", {
         y: 150,
         opacity: 0,
@@ -59,6 +57,55 @@ export default function Quote() {
           y: 150,
         },
         0,
+      );
+
+      tl.to({}, { duration: 0.5 });
+
+      // Animate -> Base
+      tl.to(
+        ".chip-left",
+        {
+          x: 0,
+          y: 100,
+        },
+        "<",
+      );
+
+      tl.to(
+        ".chip-left-1",
+        {
+          x: 0,
+          y: 100,
+        },
+        "<",
+      );
+
+      tl.to(
+        ".chip-right",
+        {
+          x: 0,
+          y: 100,
+        },
+        "<",
+      );
+
+      tl.to(
+        ".chip-right-1",
+        {
+          x: 0,
+          y: 100,
+        },
+        "<",
+      );
+
+      tl.to(
+        ".title",
+        {
+          y: -200,
+          opacity: 1,
+          ease: "power2.out",
+        },
+        "<",
       );
     }, section);
 

@@ -1,9 +1,10 @@
 import Header from "./_components/Header";
 import Material from "./_components/Content/Material";
-import Product from "./_components/Content/Product";
+import Benefit from "./_components/Content/Benefit";
 import Quote from "./_components/Content/Quote";
 import Feature from "./_components/Content/Feature";
 import Footer from "./_components/Footer";
+import Product from "./_components/Product";
 
 export default function Home() {
   return (
@@ -16,12 +17,15 @@ export default function Home() {
       >
         <Header />
 
-        <Product />
+        <Benefit />
         <Quote />
       </section>
       <section className="py-10 px-20">
         <Material />
         <Feature />
+      </section>
+      <section className="py-10 px-20">
+        <Product />
       </section>
       <Footer />
     </div>

@@ -91,8 +91,7 @@ export default function Material() {
   }, []);
   return (
     <section className="text-white">
-      <div className="px-8 py-24">
-        {/* Top */}
+      <div className="px-8 py-24 pb-0">
         <div className="flex items-end w-full justify-between">
           <div className="max-w-4xl">
             <span className="rounded-xl bg-white px-5 py-3 font-semibold text-black">

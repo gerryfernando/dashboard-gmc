@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Speaker 890",
+        "image": "1.svg"
+    },
+    {
+        "id": 1,
+        "name": "Speaker 891",
+        "image": "2.svg"
+    },
+    {
+        "id": 2,
+        "name": "Speaker 892",
+        "image": "3.svg"
+    },
+    {
+        "id": 3,
+        "name": "Speaker 893",
+        "image": "4.svg"
+    },
+    {
+        "id": 4,
+        "name": "Speaker 894",
+        "image": "5.svg"
+    },
+    {
+        "id": 5,
+        "name": "Speaker 895",
+        "image": "6.svg"
+    }
+]

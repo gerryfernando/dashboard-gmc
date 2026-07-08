@@ -11,6 +11,7 @@
 - **Tailwind CSS** membantu mempercepat proses styling tanpa perlu membuat banyak file CSS terpisah.
 - **GSAP** dipilih karena sangat baik untuk animasi yang dipicu oleh scrolling dan mudah digunakan.
 - **Framer Motion** digunakan untuk animasi komponen React, terutama pada carousel dan transisi UI, karena caranya sederhana dan mudah diintegrasikan.
+- **React Responsive** digunakan untuk menentukan kondisional ketika screen menyentuh ukuran tertentu.
 
 ## Getting Started
 
@@ -26,6 +27,12 @@ npm run build
 
 ```
 
-Deployed Website
+## Deployed Website
 
 https://dashboard-gmc-project.netlify.app/
+
+## Daftar Fitur yang belum
+
+## Estimasi Waktu
+
+18 Jam Efektif

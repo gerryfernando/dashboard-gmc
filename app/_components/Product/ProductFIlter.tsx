@@ -93,7 +93,7 @@ export default function ProductFilter() {
                   : "border-white/20 bg-[#2A2A2A] text-white hover:bg-white hover:text-black"
               }`}
             >
-              <h3 className="z-10 text-[18px] font-semibold">{product.name}</h3>
+              <h3 className="z-10 text-[18px] font-medium">{product.name}</h3>
 
               <Image
                 src={product.image}

@@ -89,17 +89,17 @@ export const subproducts = {
   Kipas: [
     {
       id: 1,
-      name: "Commercial Grade Fan",
+      name: "Commercial Grade Fan 1",
       image: "/kipas.png",
     },
     {
       id: 2,
-      name: "Commercial Grade Fan",
+      name: "Commercial Grade Fan 2",
       image: "/kipas.png",
     },
     {
       id: 3,
-      name: "Commercial Grade Fan",
+      name: "Commercial Grade Fan 3",
       image: "/kipas.png",
     },
   ],

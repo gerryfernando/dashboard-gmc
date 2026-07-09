@@ -1,5 +1,6 @@
 "use client";
 
+import { images } from "@/app/_const/const";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
@@ -8,14 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function Material() {
   const section = useRef<HTMLDivElement>(null);
-  const images = [
-    "/carousel1.png",
-    "/carousel2.png",
-    "/carousel3.png",
-    "/carousel4.png",
-    "/carousel5.png",
-    "/carousel6.png",
-  ];
+
   const texts = [
     {
       title: "Material",

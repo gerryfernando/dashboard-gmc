@@ -1,18 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const menus = [
-  { name: "Speaker" },
-  { name: "Kipas" },
-  { name: "Kompor" },
-  { name: "Grill" },
-];
+import { menus } from "../_const/const";
 
 const abouts = [{ name: "Tentang Kami" }, { name: "Kontak" }];
 
 export default function Header() {
   return (
-    <header className="sticky top-0 left-0 z-50 w-full px-5 py-10 lg:px-20">
+    <header className="sticky top-0 left-0 z-50 w-full px-5 py-10 xl:px-20">
       <div className=" max-w-full flex items-center justify-between">
         <div className="flex items-center gap-10 ">
           <Link href="/">

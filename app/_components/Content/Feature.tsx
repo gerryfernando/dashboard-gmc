@@ -1,31 +1,5 @@
+import { cards } from "@/app/_const/const";
 import Image from "next/image";
-
-const cards = [
-  {
-    title: "Professional Line",
-    description:
-      "Dirancang untuk kebutuhan profesional dengan performa audio yang lebih kuat, stabil, dan presisi di setiap detail suara.",
-    image: "/professional.svg",
-  },
-  {
-    title: "Powered Speaker",
-    description:
-      "Speaker aktif dengan amplifier terintegrasi, menghadirkan suara jernih, praktis digunakan, dan siap digunakan kapan saja tanpa perangkat tambahan.",
-    image: "/power.svg",
-  },
-  {
-    title: "Multimedia Speaker",
-    description:
-      "Dirancang untuk kebutuhan hiburan digital, menghadirkan suara jernih dan seimbang untuk musik, film, hingga gaming dalam satu perangkat praktis.",
-    image: "/multimedia.svg",
-  },
-  {
-    title: "Compact Speaker",
-    description:
-      "Desain ringkas dengan performa maksimal, menghadirkan suara jernih dan bertenaga dalam ukuran yang praktis untuk berbagai kebutuhan.",
-    image: "/compact.svg",
-  },
-];
 
 export default function Feature() {
   return (
